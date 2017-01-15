@@ -3,13 +3,13 @@
 ### Introduction
  
 apt-flash aka flash is a package management tool for debian systems.
-It accepts the same arguments as `apt-get` and offers the following additional functionalities on top.
+It's a python wrapper around apt tool, accepts the same arguments as `apt-get` and offers the following additional functionalities on top.
 
 * Allows downloading files from multiple sources (http/ftp/torrent)
 * Multiple connections per server (1-16)
 * Non-blocking nature
-  * Package downloads happen immediately.
-  * All installation requests get queued up in cases of dpkg lock.
+  * Package downloads happen immediately irrespective of dpkg-lock and all installation requests get queued up.
+  * Efficient use of network bandwidth and time using multiple mirrors.
 
 
 ### How to use?
